@@ -278,7 +278,7 @@ input, select, textarea {
 
 		}
 
-/* Row */
+/* Beginning of Row */
 
 	.row {
 		display: flex;
@@ -293,7 +293,7 @@ input, select, textarea {
 
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
-		}
+		} */
 
 		.row.aln-left {
 			justify-content: flex-start;
@@ -317,7 +317,7 @@ input, select, textarea {
 
 		.row.aln-bottom {
 			align-items: flex-end;
-		}
+		} */
 
 		.row > .imp {
 			order: -1;
@@ -1746,6 +1746,8 @@ input, select, textarea {
 
 		}
 
+/* End of row */
+
 /* Image */
 
 	.image {
@@ -1771,7 +1773,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 3em 0;
+			margin: 0 0 0.5em 0;
 		}
 
 		.image.left {
@@ -1792,6 +1794,29 @@ input, select, textarea {
 	a.image:hover {
 		opacity: 0.85;
 	}
+
+  figcaption {
+    margin-bottom: 2em;
+  }
+
+    /* Image with wrapped text */  
+    figure .float {
+      width: 50%;
+      float: right;
+    }
+
+    .wrap-img {
+      display: block;
+      width: 50%;
+      float: right;
+      margin: 0 0 0.5em 2em;
+    }
+
+    .whitespace {
+      white-space: pre-wrap;
+    }
+
+
 
 /* List */
 
