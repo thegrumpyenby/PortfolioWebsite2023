@@ -146,7 +146,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #f35858;
+			color: #1F8193;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -2121,10 +2121,10 @@ input, select, textarea {
 		position: relative;
 		padding: 4em 0 2em 0;
 		background-image: url("images/header.svg");
-		background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, #0e9fb3 15%, #18A181 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, #0e9fb3 15%, #18A181 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, #0e9fb3 15%, #18A181 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, #0e9fb3 15%, #18A181 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, #18A181 15%, #0e9fb3 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, #18A181 15%, #0e9fb3 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, #18A181 15%, #0e9fb3 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, #18A181 15%, #0e9fb3 55%);
 		background-color: #ffffff;
 		background-size: 100% 620%;
 		background-size: 128px 128px, 100% 620%, auto;
@@ -2378,13 +2378,14 @@ input, select, textarea {
       }
 
     #intro a {
-      color: #fff;
-      border-color: #fff;
-      border-color: rgba(255, 255, 255, 0.5);
+      /* color: #fff; */
+      border-bottom: dotted #fff;
+      border-color: rgba(255, 255, 255, 0.7);
     }
 
       #intro a:hover {
-        border-color: rgba(255, 255, 255, 0);
+        color: #FFC75E;
+        /* border-color: rgba(255, 255, 255, 0);*/
       }
       
     .flex-intro {
@@ -2511,8 +2512,8 @@ input, select, textarea {
 /* Testimonials */
 
 .testimonial-container {
-  border: 2px solid #484349;
-  background-color: #18A181;
+  /* border: 2px solid #0FC0B8; */
+  background-color: #2F4858;
   color: white;
   border-radius: 5px;
   padding: 16px;
@@ -2528,13 +2529,17 @@ input, select, textarea {
 
 .testimonial img {
   border-radius: 50%;
-  border: 2px solid #484349;
+  border: 2px solid #18A181;
   width: 15%;
 }
 
 .testimonial p {
   align-self: center;
   margin: 0 0 0.5em 0;
+}
+
+.testimonial a:hover {
+  color: #FFC75E;
 }
 
 .testimonial span {
@@ -2544,13 +2549,13 @@ input, select, textarea {
 }
 
 .testimonial-container.alternate {
-  border: 2px solid #18A181;
-  background-color: #5D576B;
+  /* border: 2px solid #0FC0B8; */
+  background-color: #1F8193;
 }
 
-.alternate img {
-  border: 2px solid #18A181;
-}
+/* .alternate img {
+  border: 2px solid #0FC0B8;
+} */
 
 @media (max-width: 500px) {
   .testimonial {
