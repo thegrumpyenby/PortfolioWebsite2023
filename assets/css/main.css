@@ -6,6 +6,10 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+:root {
+  --gradient-1: #18A181;
+  --gradient-2: #0E9FB3;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1795,6 +1799,10 @@ input, select, textarea {
 		opacity: 0.85;
 	}
 
+  .image-round {
+    border-radius: 50%;
+  }
+
   figcaption {
     margin-bottom: 2em;
   }
@@ -2121,10 +2129,10 @@ input, select, textarea {
 		position: relative;
 		padding: 4em 0 2em 0;
 		background-image: url("images/header.svg");
-		background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, #18A181 15%, #0e9fb3 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, #18A181 15%, #0e9fb3 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, #18A181 15%, #0e9fb3 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, #18A181 15%, #0e9fb3 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, var(--gradient-1) 15%, var(--gradient-2) 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, var(--gradient-1) 15%, var(--gradient-2) 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, var(--gradient-1) 15%, var(--gradient-2) 55%);
+		background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, var(--gradient-1) 15%, var(--gradient-2) 55%);
 		background-color: #ffffff;
 		background-size: 100% 620%;
 		background-size: 128px 128px, 100% 620%, auto;
@@ -2297,6 +2305,25 @@ input, select, textarea {
 			.dropotron.level-0.right:before {
 				right: 1em;
 			}
+/* Reusable Flexbox */
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+  }
+
+  .flex-left {
+    flex-basis: 100%;
+  }
+
+  .flex-left img {
+    max-width: 100%;
+  }
+
+  #flex-right {
+    flex-basis: 100%;
+  }
 
 /* Hero */
 
@@ -2353,7 +2380,7 @@ input, select, textarea {
     position: relative;
 		color: #fff;
     text-align: center;
-    margin-left: 1.5em;
+    margin-left: 3em;
     margin-right: 3em;
     margin-top: 3em;
   }
@@ -2387,30 +2414,20 @@ input, select, textarea {
         color: #FFC75E;
         /* border-color: rgba(255, 255, 255, 0);*/
       }
-      
-    .flex-intro {
-      display: flex;
-      justify-content: space-between;
-      gap: 1.5em;
-    }
-
-    #intro-img {
-      flex-basis: 100%;
-    }
-
-    #intro-img img {
-      max-width: 100%;
-    }
-
-    #intro-txt {
-      flex-basis: 100%;
-    }
 
     @media screen and (max-width: 480px) {
       .flex-intro {
         flex-direction: column;
       }
     }
+
+/* Disclaimer */
+
+  #disclaimer {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 3em;
+  }
 
 /* Promo */
 
@@ -2512,7 +2529,6 @@ input, select, textarea {
 /* Testimonials */
 
 .testimonial-container {
-  /* border: 2px solid #0FC0B8; */
   background-color: #2F4858;
   color: white;
   border-radius: 5px;
@@ -2552,10 +2568,6 @@ input, select, textarea {
   /* border: 2px solid #0FC0B8; */
   background-color: #1F8193;
 }
-
-/* .alternate img {
-  border: 2px solid #0FC0B8;
-} */
 
 @media (max-width: 500px) {
   .testimonial {
@@ -3164,6 +3176,8 @@ input, select, textarea {
 				width: 100%;
 				margin: 0 0 1.5em 0;
 			}
+
+      
 
 		/* Actions */
 
