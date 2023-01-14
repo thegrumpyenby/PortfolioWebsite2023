@@ -95,7 +95,7 @@ input, select, textarea {
 		background: #f5f7fa;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #52575c;
+		color: #2F4858;
 		line-height: 1.75em;
 		font-size: 14pt;
 	}
@@ -114,14 +114,14 @@ input, select, textarea {
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #52575c;
+		color: #2F4858;
 		line-height: 1.75em;
 		font-size: 15pt;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #52575c;
+		color: #1F8193;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2056,8 +2056,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f35858;
-			border-color: rgba(243, 88, 88, 0.5);
+			color: #18A181;
+			border-color: #18A18150;
 		}
 
 /* Icons */
@@ -2430,10 +2430,14 @@ input, select, textarea {
     margin-right: 5em;
     margin-top: 3em;
   }
-
   #disclaimer p {
-    font-size: 1em;
-    line-height: 1.2em;
+    display: block;
+    color: #2F4858;
+    padding: 0.75em 0 1em 0;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
 /* Services */
