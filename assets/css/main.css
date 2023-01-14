@@ -1809,22 +1809,44 @@ input, select, textarea {
     margin-bottom: 2em;
   }
 
-    /* Image with wrapped text */  
-    figure .float {
+    /* Image with wrapped text */ 
+    
+    .float {
       width: 50%;
-      float: right;
     }
+      .float.right {
+        float: right;
+      }
+
+      .float.left {
+        float:left;
+      }
 
     .wrap-img {
       display: block;
-      width: 50%;
-      float: right;
-      margin: 0 0 0.5em 2em;
+      max-width: 100%;
     }
 
-    .whitespace {
-      white-space: pre-wrap;
-    }
+      .wrap-img.left {
+        float: left;
+        padding: 0 2em 0.5em 0;
+      }
+
+      .wrap-img.right {
+        float: right;
+        padding: 0 0 0.5em 2em;
+      }
+
+      .wrap-caption.right {
+        float: right;
+      }
+      .wrap-caption.left {
+        float: left;
+      }
+
+      .whitespace {
+        white-space: pre-wrap;
+      }
 
 
 
