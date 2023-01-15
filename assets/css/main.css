@@ -2268,7 +2268,7 @@ input, select, textarea {
 				#nav > ul > li:first-child {
 					margin-left: 0;
 				}
-
+/* FIXME get the space equal */
 				#nav > ul > li.break {
 					margin-left: 20em;
 				}
