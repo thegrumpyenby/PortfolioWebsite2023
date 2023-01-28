@@ -136,6 +136,7 @@ input, select, textarea {
 	h2 {
 		font-size: 2em;
 		line-height: 1.25em;
+    text-align: center;
 	}
 
 	h3 {
@@ -2268,7 +2269,6 @@ input, select, textarea {
 				#nav > ul > li:first-child {
 					margin-left: 0;
 				}
-/* FIXME get the space equal */
 				#nav > ul > li.break {
 					margin-left: 20em;
 				}
@@ -2343,6 +2343,10 @@ input, select, textarea {
 
   .flex-left {
     flex-basis: 100%;
+  }
+
+  .flex-left h2 {
+    text-align: left;
   }
 
   .flex-left img {
@@ -2535,7 +2539,67 @@ input, select, textarea {
 
 .services2-col2 {}
 
+/* Talks and Public Speaking */
 
+.article-centered {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+#events li {
+  list-style: none;
+  line-height: 1.8em;
+}
+
+#events span a {
+  border-bottom: none;
+}
+
+#events span a:hover {
+  color: #FFC75E;
+}
+
+#events span {
+  display: inline;
+  border: 1px solid #0E9FB3;
+  background-color: #0E9FB3;
+  color: white;
+  border-radius: 0.35em;
+  padding: 0.1em 0.25em 0.1em 0.25em;
+  vertical-align: top;
+  margin-left: 0.7em;
+}
+
+.talks {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5em;
+  flex-wrap: wrap;
+
+}
+
+.talk-video {
+  flex: 1;
+  max-width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.talk-video p {
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-weight: 400;
+}
+
+.talk-video img {
+  width: 100%;
+}
+
+.talk-video a {
+  border-bottom: none;
+}
 
 /* Promo */
 
