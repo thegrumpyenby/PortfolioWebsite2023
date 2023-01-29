@@ -2572,23 +2572,24 @@ input, select, textarea {
 
 .talks {
   display: flex;
-  justify-content: space-evenly;
-  gap: 1.5em;
+  justify-content: space-between;
   flex-wrap: wrap;
-
+  width: 100%;
+  margin-top: 1.5em;
+  gap: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .talk-video {
   flex: 1;
-  max-width: 33%;
+  min-width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .talk-video p {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 0.8em;
   font-weight: 400;
 }
