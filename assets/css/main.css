@@ -2570,34 +2570,46 @@ input, select, textarea {
   margin-left: 0.7em;
 }
 
-.talks {
+.talks, .projects {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 1.5em;
   gap: 1.5em;
-  margin-bottom: 1.5em;
 }
 
-.talk-video {
+.talk-video, .project-video {
   flex: 1;
   min-width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 1.5em;
 }
 
-.talk-video p {
-  /* text-align: center; */
+.project-video {
+  padding-bottom: 56.5%;
+}
+
+.talk-video p, .project-video p {
   margin-bottom: 0.8em;
   font-weight: 400;
 }
 
-.talk-video img {
+.talk-video img, .project-video img {
   width: 100%;
 }
 
+/* .talk-section {
+  margin-top: 3em;
+
+} */
+
+.talk-video iframe {
+  min-height: 100%;
+  width: 100%;
+}
 .talk-video a {
   border-bottom: none;
 }
