@@ -2589,7 +2589,7 @@ input, select, textarea {
 }
 
 .project-video {
-  padding-bottom: 56.5%;
+
 }
 
 .talk-video p, .project-video p {
@@ -2601,14 +2601,13 @@ input, select, textarea {
   width: 100%;
 }
 
-/* .talk-section {
+.talk-section {
   margin-top: 3em;
 
-} */
+}
 
-.talk-video iframe {
-  min-height: 100%;
-  width: 100%;
+.project-video iframe {
+  
 }
 .talk-video a {
   border-bottom: none;
