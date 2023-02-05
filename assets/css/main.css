@@ -1853,6 +1853,67 @@ input, select, textarea {
         white-space: pre-wrap;
       }
 
+/* Slideshow */
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #1F819395;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #1F8193;
+  }
+
+  .text {
+    color: #f2f2f2;
+    background-color: #00000060;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
 
 
 /* List */
@@ -1905,9 +1966,9 @@ input, select, textarea {
 	}
 
 		ul.divided li {
-			border-top: solid 1px #d2d7dc;
-			padding-top: 2em;
-			margin-top: 2em;
+			/* border-top: solid 1px #d2d7dc; */
+			padding-top: 1em;
+			margin-top: 1em;
 			padding-left: 0;
 		}
 
@@ -1931,13 +1992,13 @@ input, select, textarea {
 			ul.icons li:before {
 				display: inline-block;
 				color: #fff;
-				background: #61666b;
+				background: #1F8193;
 				width: 2.5em;
 				height: 2.5em;
 				border-radius: 0.35em;
 				text-align: center;
 				line-height: 2.5em;
-				margin-right: 0.75em;
+				margin-right: 0.7em;
 			}
 
 /* Menu */
@@ -2129,7 +2190,7 @@ input, select, textarea {
 		position: relative;
 		background: #fff;
 		overflow-x: hidden;
-		padding: 6em 0 6em 0;
+		padding: 3em 0 3em 0;
 	}
 
 	.image-wrapper {
@@ -2585,11 +2646,8 @@ input, select, textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 1.5em;
-}
-
-.project-video {
-
 }
 
 .talk-video p, .project-video p {
@@ -2606,10 +2664,7 @@ input, select, textarea {
 
 }
 
-.project-video iframe {
-  
-}
-.talk-video a {
+.talk-video a, .project-video a {
   border-bottom: none;
 }
 
