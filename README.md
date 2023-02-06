@@ -1,6 +1,6 @@
 # New Portfolio Website 2023
 
-I pulled this website up fairly quickly when my Squarespace submission was about to renew and I decided I wasn’t willing to pay them loads of money for a shitty product anymore.
+I pulled this website up fairly quickly when my Squarespace subscription was about to renew and I decided I wasn’t willing to pay them loads of money for a shitty product anymore.
 ## Why did you hardcode this?
 I chose to hardcode the site in HTML and CSS using a template by HTML5 UP because, at this point, HTML and CSS are what I have learned and at least know my way around. I wanted to use this as an opportunity to sharpen my skills rather than semi-learning a new language on the go and failing to finish the site within the time constraints I had (which was a month or so, and it actually ended up taking a bit less than that) while also doing a bunch of other things in my life.
 ## Do you regret hardcoding it?
